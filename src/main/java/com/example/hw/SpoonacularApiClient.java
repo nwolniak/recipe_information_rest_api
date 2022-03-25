@@ -25,7 +25,7 @@ public class SpoonacularApiClient {
             Response response = this.target.path("recipes/complexSearch")
                     .queryParam("query", dishName)
                     .queryParam("number", 1)
-                    .queryParam("apiKey", "77d0ff22465e4285987a0d46cdce4c49")
+                    .queryParam("apiKey", "")
                     .request()
                     .header("Content-type", MediaType.APPLICATION_JSON)
                     .get();
@@ -54,7 +54,7 @@ public class SpoonacularApiClient {
         try {
             Response response = this.target.path("recipes/" + recipeId + "/information")
                     .queryParam("includeNutrition", "false")
-                    .queryParam("apiKey", "77d0ff22465e4285987a0d46cdce4c49")
+                    .queryParam("apiKey", "")
                     .request()
                     .header("Content-type", MediaType.APPLICATION_JSON)
                     .get();

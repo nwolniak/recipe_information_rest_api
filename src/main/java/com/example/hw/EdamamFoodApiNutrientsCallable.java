@@ -34,7 +34,7 @@ public class EdamamFoodApiNutrientsCallable implements Callable<Nutrients> {
                     .path("v2")
                     .path("parser")
                     .queryParam("app_id", "097dcf73")
-                    .queryParam("app_key", "031bf881dc42e3df3139616b331941fa")
+                    .queryParam("app_key", "")
                     .queryParam("ingr", ingredientName)
                     .request()
                     .accept(MediaType.APPLICATION_JSON)

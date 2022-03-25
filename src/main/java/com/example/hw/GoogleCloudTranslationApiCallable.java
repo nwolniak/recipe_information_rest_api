@@ -32,7 +32,7 @@ public class GoogleCloudTranslationApiCallable implements Callable<String> {
                     .path("v2")
                     .queryParam("target", "pl")
                     .queryParam("q", this.ingredientName)
-                    .queryParam("key", "AIzaSyDBfXjilucUWsU5ZYtRmjHqIvgtMomlB9A")
+                    .queryParam("key", "")
                     .request()
                     .accept(MediaType.APPLICATION_JSON)
                     .get();

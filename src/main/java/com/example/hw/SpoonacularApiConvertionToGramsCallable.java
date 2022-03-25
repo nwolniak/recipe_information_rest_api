@@ -39,7 +39,7 @@ public class SpoonacularApiConvertionToGramsCallable implements Callable<Double>
                     .queryParam("sourceAmount", this.sourceAmount)
                     .queryParam("sourceUnit", this.sourceUnit)
                     .queryParam("targetUnit", "grams")
-                    .queryParam("apiKey", "77d0ff22465e4285987a0d46cdce4c49")
+                    .queryParam("apiKey", "")
                     .request()
                     .header("Content-type", MediaType.APPLICATION_JSON)
                     .get();
